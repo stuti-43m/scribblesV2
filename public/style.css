@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+#posemenu {
+  width: 195vh;
+  height: 35vh;
+  float:left;
+}
+#background {
+  height: 100vh;
+  background-color: rgb(24, 24, 24);
+}
+.posecategory {
+  display: inline-block;
+  height: 100%;
+  margin-right: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.justinline {
+  display: inline-block;
+  height: 100%;
+}
+.pose { display: inline-block;
+ width: 19vh;
+ height:100%;
+ margin-left: 0px;
+}
+.image {
+  height: 100%;
+  width:100%
+}
+.line {
+  height: 7px;
+  width: 108%;
+}
+.videoelement {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 35px;
+}

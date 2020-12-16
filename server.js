@@ -3,19 +3,33 @@ var http = require("http");
 const express = require('express');
 const path = require('path');
 const app = express();
-const WebSocket = require('ws');
-const PORT = process.env.PORT || 3000;
+//const WebSocket = require('ws');
+const { Server } = require('ws');
 const INDEX = '/index.html';
 let localSocket = undefined;
 let currentuser = undefined;
-app.use(express.static('public'));
+const PORT = process.env.PORT || 3000;
+
+const server = express()
+  .use(express.static('public'))
+  .get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, INDEX));
+  })
+  .listen(PORT, () => console.log(`Listening on ${PORT}`));
+
+/*app.use(express.static('public'));
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, INDEX));
 });
 app.listen(PORT, () => {
     console.log(`listening http://localhost:${PORT}`);
-});  
-const socketServer = new WebSocket.Server({port: 3030});
+}); */ 
+const socketServer = new Server({ server });
+/*const httpServer = http.createServer(app)
+const socketServer = new WebSocket.Server({
+    'server': httpServer
+})
+httpServer.listen(port)*/
 socketServer.on('connection', (socketClient) => {
   //console.log('connected');
   //console.log('client Set length: ', socketServer.clients.size);

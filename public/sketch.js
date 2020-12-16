@@ -30,7 +30,7 @@ ws.onmessage = function(event) {
 }
 var el;
 function setup() {
-  onsole.log('HOST',HOST); 
+  console.log('HOST',HOST); 
   canvas = createCanvas(window.screen.width, window.screen.height- window.screen.height*33/100);
   canvas.position(window.screen.width /2 + 35,window.screen.height*33/100 - 35) 
   video = createCapture(VIDEO);

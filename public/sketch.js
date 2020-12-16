@@ -25,11 +25,12 @@ ws.onmessage = function(event) {
   }
   if(event.data == 'WAITING_CLEARED') {
     use = true;
-    window.alert('Ready to use !!!');
+    window.alert('Ready to use');
   }
 }
 var el;
 function setup() {
+  onsole.log('HOST',HOST); 
   canvas = createCanvas(window.screen.width, window.screen.height- window.screen.height*33/100);
   canvas.position(window.screen.width /2 + 35,window.screen.height*33/100 - 35) 
   video = createCapture(VIDEO);

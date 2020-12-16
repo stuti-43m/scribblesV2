@@ -179,7 +179,7 @@ function createframe(src) {
 
   iframe.src = 'https://www.youtube.com/embed/yIEY6sIx69A';
   iframe.frameborder="0" 
-  ifram.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  iframe.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   iframe.width = window.screen.width/2;
   iframe.height = window.screen.width/3;
   iframe.allow = 'autoplay'

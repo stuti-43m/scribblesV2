@@ -21,7 +21,7 @@ ws.onopen = () => {
 ws.onmessage = function(event) {
   if(event.data == 'IN_USE') {
     use = false;
-    window.alert('Hey! You are waiting. Looks like there is a person just finishing off their drawing. You can enjoy the live stream meanwhile');
+    window.alert('Hey! You are in waiting. Looks like there is a person just finishing off their drawing. You can enjoy the live stream meanwhile');
   }
   if(event.data == 'WAITING_CLEARED') {
     use = true;

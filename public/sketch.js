@@ -14,7 +14,7 @@ let brain;
 let poseLabel = "";
 let use = true;
 var HOST = location.origin.replace(/^http/, 'ws')
-const ws = new WebSocket('ws://localhost:3030');
+const ws = new WebSocket('wss://tranquil-dawn-67895.herokuapp.com:3030/');
 ws.onopen = () => { 
   console.log('Now connected',HOST); 
 };

@@ -176,7 +176,7 @@ function createframe(src) {
   let node = document.createElement('div');
   node.className = 'videoelement';
   var iframe = document.createElement('iframe');
-  iframe.src = 'https://studio.youtube.com/video/JmLau5ypsl8/livestreaming';
+  iframe.src = 'https://youtu.be/uMrAlCCziXQ';
   iframe.width = window.screen.width/2;
   iframe.height = window.screen.width/3;
   iframe.allow = 'autoplay'

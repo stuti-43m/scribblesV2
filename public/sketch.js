@@ -121,13 +121,12 @@ function draw() {
       line(a.position.x, a.position.y, b.position.x, b.position.y);
     }
     for (let i = 0; i < pose.keypoints.length; i++) {
-      if(pose.keypoints[i].position.y+10 < video.height && pose.keypoints[i].position.x > (video.width - 500)) {
         let x = pose.keypoints[i].position.x;
         let y = pose.keypoints[i].position.y;
         fill(0);
         stroke(255);
         ellipse(x, y, 16, 16);
-      }
+      
     }
   }
   pop();

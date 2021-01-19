@@ -20,5 +20,6 @@ These poses were meant to act as a replacement for the standard front, back etc 
 - The server runs on expressJS. 
 - It acts as an messenger between the arduino and client. It waits for incoming messages from the client and transmits it to arduino using the serial communication library. 
 - It handles the following conditions 
+   ##### WAITING_CLEARED - A newly connected client can control the robot
    ##### IN_USE - If a client is already controlling the robot
-   ##### 
+   ##### WAITING_CLEARED - A client in waiting has been cleared for use 

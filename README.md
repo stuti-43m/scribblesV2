@@ -16,6 +16,10 @@ These poses were meant to act as a replacement for the standard front, back etc 
 - The server on receiving the data forwards the data to our arduino through serial communication.
 
 ## Code
+#### public/sketch.js
+- Here is where the client logic resides. 
+- A new instance of the trained ml5 model is created that helps identify the poses made by the user and on appropriate identification sends the data to the server.
+   
 #### server.js
 - The server runs on expressJS. 
 - It acts as an messenger between the arduino and client. It waits for incoming messages from the client and transmits it to arduino using the serial communication library. 
@@ -23,3 +27,10 @@ These poses were meant to act as a replacement for the standard front, back etc 
    ##### WAITING_CLEARED - A newly connected client can control the robot
    ##### IN_USE - If a client is already controlling the robot
    ##### WAITING_CLEARED - A client in waiting has been cleared for use 
+
+
+Find the webapge on
+https://tranquil-dawn-67895.herokuapp.com/
+
+To try out the robot, feel free to reach out
+Just a quick start of the robot and you will be able to control it remotely.

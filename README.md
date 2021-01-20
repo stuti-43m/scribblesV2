@@ -15,7 +15,7 @@ View the entire video [here](https://vimeo.com/491766360?ref=em-v-share)
 #### The Poses 
 - We picked out famous dance moves and trained a model on ml5 to recognise the poses. 
 These poses were meant to act as a replacement for the standard front, back etc buttons on controllers used for robots.
-![poses](https://user-images.githubusercontent.com/75906242/105199690-0914e980-5b0d-11eb-8bc5-c9d370ed2adc.png)
+<img src="https://user-images.githubusercontent.com/75906242/105199690-0914e980-5b0d-11eb-8bc5-c9d370ed2adc.png" width="500px" height="500px">
 
 #### Connecting the robot and the poses.
 - We created a webpage that had a "menu" of poses available to the user. This webpage initiated an instance of our ml5 model to recognise the poses captured by the webcam.
@@ -38,6 +38,9 @@ These poses were meant to act as a replacement for the standard front, back etc 
 
 Find the webapge on
 https://tranquil-dawn-67895.herokuapp.com/
+
+More on our development process [here](https://yonaymoris.github.io/itp/final-project-process/)
+
 
 To try out the robot, feel free to reach out
 Just a quick start of the robot and you will be able to control it remotely.

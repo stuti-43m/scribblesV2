@@ -5,6 +5,8 @@ This is the code for the webapp used to control Mr Scribbles (A dancing drawing 
 ## Intro
 Some people love expressing themselves while dancing; some people do it while drawing. We thought, why don't we combine those two and create something fun?
 The Dancing Drawing Robot was created to help people feel more comfortable about their bodies, about their movements — about being weird sometimes ;)
+
+
 ![gif (1)](https://user-images.githubusercontent.com/75906242/105194991-21363a00-5b08-11eb-83be-e81b04edaf98.gif)
 #### The Robot
 - Our robot was driven by the arduino microcontroller, connected to DC and servo motors. 

@@ -22,6 +22,10 @@ These poses were meant to act as a replacement for the standard front, back etc 
 - This webpage was connected to a websocket server(built on NODEJS). 
 - The server on receiving the data forwards the data to our arduino through serial communication.
 
+<img src="https://user-images.githubusercontent.com/75906242/105201462-eaafed80-5b0e-11eb-8452-907d7ef5213b.png" height="300px" width="500px">
+Try replicating the poses on the top to move the robot. When a pose made by the user matches any of the ones on the top, the colour changes to that pose colour as a feedback.
+There was also alive stream for the remote users to be able the see the robot move and draw.
+
 ## Code
 #### public/sketch.js
 - Here is where the client logic resides. 
